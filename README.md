@@ -1,9 +1,8 @@
-## Babel with Gulp
+## es2015
 
-Template to build apps using Babel and Gulp for es2015
+TODO;
+- fix name in git
+- fix name in package.json
 
-- Transpile code to ES2015 using Babel.
 
-- Bundle js modules using Browserify
-
-Built with help of CodeSchool.tv
+Built with help of CodeSchool Build with us.
