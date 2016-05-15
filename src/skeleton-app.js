@@ -4,7 +4,6 @@ let Post = {
       resolve("ok posts!");
     });
   }
-
 }
 
 let ui = {
