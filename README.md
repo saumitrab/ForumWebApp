@@ -2,6 +2,7 @@
 
 ### How to run?
 ```
+npm i
 gulp build
 json-server server/db.json
 open index.html
