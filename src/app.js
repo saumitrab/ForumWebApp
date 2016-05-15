@@ -1,16 +1,15 @@
-let Post = {
-  findAll() {
-    return new Promise((resolve, reject) => {
-      resolve("ok posts!");
-    });
-  }
+import Post from './post';
+import User from './user';
+import ui from './ui';
 
-}
+Post.findAll()
+  .then(ui.renderPosts)
+  .catch( (error) => {
+    console.log(error);
+  });
 
-let ui = {
-  renderPosts(posts) {
-    console.log(posts);
-  }
-}
-
-Post.findAll().then(ui.renderPosts);
+User.findRecent()
+  .then(ui.renderUsers)
+  .catch( (error) => {
+    console.log(error);
+  });

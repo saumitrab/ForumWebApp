@@ -18,8 +18,8 @@ gulp.task('transpile', () => {
     .pipe(gulp.dest('dist'));
 });
 
-// watch for changes 
-gulp.task('watch', () => {
+// watch for changes, also add 'transpile' as a first task to watch
+gulp.task('watch', ['transpile'], () => {
   gulp.watch('src/**/*.js', ['transpile']);
 });
 
